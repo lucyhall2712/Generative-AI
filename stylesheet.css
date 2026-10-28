@@ -1,0 +1,445 @@
+body{
+    margin: 0px;
+    background-color: #FDFDF3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*to top button*/
+.to-top {
+    background-color: #d9f0eb;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color: #22293C;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity:1;
+}
+
+/* Nav bar */
+ .nav{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    margin: 0;
+}
+
+/* nav-item = list items in nav bar = effects, help. */
+.nav-item{
+    list-style-type: none;
+    padding: 8px 20px;
+}
+
+/* nav-link = links in nav bar, for decorations = effects, help. */
+.nav-link{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 12px; /* padding = space between text and border. */
+    border-radius: 17px;
+    color: #22293C;
+    transition: all 0.4s ease-in-out;
+}
+
+/* active = when the link is clicked, it will change color. */
+.nav-link:hover{
+    background-color: #759cb1;
+    color: #D4F5F5;
+}
+
+.home-button{
+    height: 46px;
+    padding-right: 30px;
+    transition:all 0.4s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.2); 
+  cursor: pointer;
+}
+
+/* main header + background image*/
+.main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    background-image: url("images/heading-image-blur.png");
+    background-size: cover;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin-bottom: 90px;
+
+}
+
+    .banner-text h1{
+        font-family: "Audiowide", sans-serif;
+        color: #22293C;
+    }
+
+    .banner-text p{
+        font-family: "Geo", sans-serif;
+        font-size: 40px;
+        margin: auto;
+        color: #22293C;
+    } 
+
+/*header rectangle*/
+.big-heading{
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background-image: url("images/header-rectangle.png");
+    background-size: contain;
+    text-align: center;
+}
+
+/* main content */
+.content{ /* controls all of the text box "bubble" s*/
+    margin: 130px 0px;
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.content-2{ /* controls all of the text box "bubble" s with different margins*/
+    margin: 130px 0px 0px;
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.block-1{ /* white text */
+    padding: 4%;
+    font-family: "Space Mono", monospace;
+    color:#eafaf7;
+}
+
+.block-2{ /* dark text */
+    padding: 4%;
+    font-family: "Space Mono", monospace;
+    color: #22293C;
+}
+
+
+.content-text{ /* controls all of the text*/
+    padding: 4%;
+    width: 63%;
+    font-family: "Space Mono", monospace;
+    font-size: 22px;
+}
+
+/*text*/
+@media screen and (max-width: 1100px) and (min-width:750px){
+    .content-text, .content-text-small, .content-text-small-2{
+    font-size: 20px !important;
+    width: 90% !important;
+    padding-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width:750px){
+    .content-text-small, .content-text-small-2{
+    font-size: 20px !important;
+    width: 80% !important;
+    padding-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .content-text{
+    width: 90% !important;
+    font-size: 19px !important;
+    } 
+}
+
+@media screen and (max-width: 750px){
+    .content-text-small, .content-text-small-2, .heading-small{
+    width: 90% !important;
+    display:flex !important;
+    padding-left: 40px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-size: 18px !important;
+    } 
+}
+
+/*portal*/
+@media screen and (max-width: 1100px) and (min-width:750px){
+    .c-link{
+    font-size: 50px !important;
+    min-height: 21px !important;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .c-link{
+    font-size: 25px !important;
+    min-height: 21px !important;
+    } 
+}
+
+/*images*/
+@media screen and (max-width: 1100px) and (min-width:750px){
+    .image-setting-1, .image-setting-2, .image-setting-3{
+    height: 40vh;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .image-setting-1, .image-setting-2, .image-setting-3{
+    height: 30vh;
+    } 
+}
+
+/*main heading text*/
+@media screen and (max-width: 11000px) and (min-width:900px){
+    .banner-text{
+    font-size: 70px !important;
+    padding: 90px 0px;
+
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:750px){
+    .banner-text{
+font-size: 50px !important;
+padding: 90px 0px;
+
+    }
+}
+
+@media screen and (max-width: 750px){
+    .banner-text{
+font-size: 40px !important;
+padding: 130px 0px;
+
+    } 
+}
+/* have a @ media for pixel width and px size margin-top nnd pixel font at a screen size */
+
+
+
+
+.bubble-dark-blue{
+    background-image: url("images/bubble-dark-blue.png");
+}
+
+.bubble-brown{
+    background-image: url("images/bubble-brown.png");
+}
+
+.bubble-cyan{
+    background-image: url("images/bubble-cyan.png");
+}
+
+.bubble-cyan-cog{
+    background-image: url("images/bubble-cyan.png");
+}
+
+
+/* images*/
+
+.images{
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+.image-setting-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-setting-2{
+    margin-top: 9%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-setting-3{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 9%;
+    transition: all 0.4s ease-in-out;
+}
+
+/* small bubbles text */
+.heading-small{ /*for all*/
+  font-family: "Audiowide", sans-serif;
+  font-style: normal;
+  color:#21252d;
+  font-size: 20px;
+  padding-left: 7%;
+  padding-top: 2%;
+  display:block;
+}
+
+.content-text-small{
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+  color:#eafaf7;
+  padding-left: 15%;
+  padding-top: 40px;
+  width: 60%;
+  font-size: 27px;
+}
+
+.content-text-small-2{
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+  color: #22293C;
+  padding-left: 15%;
+  padding-top: 40px;
+  width: 60%;
+  font-size: 27px;
+}
+
+/*links*/
+.content-text-small a{
+    color:#eafaf7;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+.content-text-small a:hover{
+    border-radius: 17px;
+    padding: 5px;
+}
+
+.content-text-small-2 a{
+  color: #22293C;
+  font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+.content-text-small-2 a:hover{
+    border-radius: 17px;
+    padding: 5px;
+}
+
+/*text boxes*/
+.small-dark-blue{
+    background-image: url("images/Microslop.png");
+}
+
+.small-brown{
+    background-image: url("images/Pause-AI.png");
+}
+
+.small-cyan{
+    background-image: url("images/Media-Capture-Watch.png");
+}
+
+.small-navy{
+    background-image: url("images/Tech-Justice.png");
+}
+
+/* text boxes styling */
+.content-bubble{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: top;
+}
+
+/*background of the help page */
+
+.container-2{
+    background-image: url("images/blurred-background.png");
+    background-position: center;
+}
+
+/*portal*/
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-link{
+    background-image: url("images/portal.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 76%;
+    height: 294px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .c-link{
+        margin-top: 7%;
+        text-decoration: none;
+        font-family: "Audiowide", sans-serif;
+        font-size: 70px;
+        transition: all 0.4s ease-in-out;
+        color: #667F95;
+        object-fit: cover;
+    }
+
+    .bg-link a:hover{
+        color: #22293C;
+    }
+
+/*footer*/
+.footer{
+    background-image: url("images/footer-image.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Created by.. */
+.footer-text{
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    color: #D4F5F5;
+}
+
+/* images from.. */
+.image-links{
+    font-family: "Geo", sans-serif;
+    color: #b3cede;
+}
+
+/*links*/
+.footer a{
+    text-decoration: none;
+    color: #b3cede;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer a:hover{
+    color: #D4F5F5;
+    transition: all 0.4s ease-in-out;
+}
